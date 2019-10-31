@@ -45,7 +45,7 @@ function makePersonObject(id, name, email) {
       }
       return person
 }
-console.log(makePersonObject(876, "saige", "emailll"))
+
 
 /**
  * ### Challenge `getName`
@@ -61,7 +61,7 @@ console.log(makePersonObject(876, "saige", "emailll"))
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName({name}) {
-  return
+  return "Hello, my name is " + name;
 }
 
 /**
