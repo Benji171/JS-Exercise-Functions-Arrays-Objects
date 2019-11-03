@@ -196,8 +196,14 @@ function getModelYears(arr) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+function getOlderCars(arr, year) {
+  let carArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].car_year <= year) {
+      carArr.push(arr[i]);
+    }
+  }
+  return carArr;
 }
 
 /**
@@ -211,8 +217,15 @@ function getOlderCars(/* code here */) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(/* code here */) {
-  /* code here */
+function getGermanCars(arr) {
+  let germanCars = [];
+  const german_makes = [ "Audi", "Mercedes-Benz", `Volkswagen`, `BMW`]
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].includes(german_makes)) {
+      germanCars.push(arr[i]);
+    }
+  }
+  return germanCars;
 }
 
 /**
