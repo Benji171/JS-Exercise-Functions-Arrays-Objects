@@ -218,10 +218,10 @@ function getOlderCars(arr, year) {
  * in the same order as they appear in the original inventory.
 */
 function getGermanCars(arr) {
-  let germanCars = [];
+  const germanCars = [];
   const german_makes = [ "Audi", "Mercedes-Benz", `Volkswagen`, `BMW`]
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].includes(german_makes)) {
+    if (german_makes.includes(arr[i].car_make)) {
       germanCars.push(arr[i]);
     }
   }
@@ -237,13 +237,26 @@ function getGermanCars(arr) {
  * const sum = function (a, b) {
  *   return a + b
  * }
- * 
+ */ 
+ const sun = (a, b) => {
+ return a + b
+ }
+
+ /** 
  * const addFive = function(num) {
 *    return num + 5
+ * }
+ * 
+ * addFive (num) => {
+ * return num + 5
  * }
  *
  * const argTimesTwo = function (num) {
  *   return num * 2
+ * }
+ * 
+ * argTimesTwo (num) => {
+ * return num * 2
  * }
 */
 const sum = null; // code here!
